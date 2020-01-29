@@ -2,7 +2,9 @@ require 'test_helper'
 
 class PostTest < ActiveSupport::TestCase
   def setup
-    @post = Post.new(title: "Example post", body: "Lorem Ipsum et Dolor sit amet")
+    @post = Post.new(title: "Example post", 
+                     body: "Lorem Ipsum et Dolor sit amet",
+                     user_id: 1)
   end
 
   test "should be valid" do
